@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css"  href="./desktop.css" media="only screen and (min-width:401px)"  />
+<style>
+#con {
+        width: 230px;
+        height: 230px;
+}
+#eat {
+    display: inline-block;
+}
+div.imgTopic {
+    display: inline-block;
+    position:relative;
+} 
+#one {
+    width: 230px;
+    height: 230px;
+    opacity: 0.5;
+}
+#one:hover {
+    opacity: 1;
+}
+h1.title {
+    position:absolute;
+    z-index:1;
+    left:5px;
+    bottom:30px; 
+    font-size:18px;
+    font-weight:bold;
+    color:#fff;
+}
+</style>
+<script src='https://code.jquery.com/jquery-3.5.1.js'></script>
+<script>
+$(document).ready(function() {
+    $("img").click(function() {
+        alert($(this).attr("alt"));
+    });
+});
+</script>
+</head>
+<body>
+<div id="top">
+    <div id="header">
+        <h1 id="logo"><img src="media/dog3.gif" width="100" height="50">
+            <img src="media/dog2.gif" width="100" height="50">
+            <img src="media/dog.gif" width="100" height="50">
+        </h1>
+    
+        <ul id="menu">
+			<li><a href="메뉴.html">HOME</a></li>
+			<li><a href="#">INTRODUCE</a>
+                <ul id="sub-menu">
+                    <li><a href="사진첩.html">사진</a></li>
+                    <li><a href="영상집.html">영상</a></li>
+                </ul>
+            </li>
+			<li><a href="#">TIP'S</a>
+                <ul id="sub-menu">
+                    <li><a href="사료&간식.html">사료 & 간식</a></li>
+                    <li><a href="주의할점.html">주의할 점</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CULTURE</a>
+                <ul id="sub-menu">
+                    <li><a href="세계동물의날.html">세계 동물의 날</a></li>
+                    <li><a href="동물주제영화.html">동물 주제 영화</a></li>
+                </ul>
+            </li>
+			<li><a href="#" id="current">FETURE</a>
+                <ul id="sub-menu">
+                    <li><a href="함께하는미래.html">함께하는 미래</a></li>
+                    <li><a href="입양및등록.html">입양 및 등록</a></li>
+                </ul>
+            </li>
+		</ul>
+    </div>
+    <hr class="hidden" />
+    <div id="contents">
+		<div id="campaign">
+			<img src="media/반려동물.png"  width="945" height="200" alt=""  />
+			<p class="caption"> Animal Lover's blog	</p>
+		</div>
+	</div>
+    <hr  class="hidden" />
+    <h1>사진 클릭 시 추가 설명을 확인하실 수 있습니다.</h1>
+    <hr  class="hidden" /> 
+    <h2>하고 싶은 것들</h2>
+    <div class="imgTopic">
+        <h1 class="title">커플룩</h1>
+        <p class="content"><img src="media/커플룩.jpg" id="one" alt="커플룩입고 사진찍기">
+        </p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">운동장</h1>
+        <p class="content"><img src="media/운동장.jpg" id="one" alt="강아지 운동장에서 목줄없이 같이 놀기">
+        </p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">어질리티</h1>
+        <p class="content"><img src="media/어질리티.jpg" id="one" alt="어질리티 도전해보기">
+        </p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">비행기</h1>
+        <p class="content"><img src="media/비행기.jpg" id="one" alt="같이 비행기타고 여행가기">
+        </p>
+    </div>
+
+    <hr  class="hidden" />
+    <h2>가고 싶은 곳들</h2>
+    <div class="imgTopic">
+        <h1 class="title">강아지숲</h1>
+        <p class="content"><img src="media/강아지숲.jpg" id="one" 
+            alt="국내 최대 반려견 테마파크
+(강원도 춘천시 남산면 충효로 437)">
+        </p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">하남스타필드</h1>
+        <p class="content"><img src="media/스타필드.jpg" id="one" 
+            alt="반려견 동반 쇼핑이 가능한 국내 최초의 쇼핑몰
+(경기 하남시 미사대로 750 스타필드 하남)">
+        </p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">도그베이</h1>
+        <p class="content"><img src="media/도그베이.jpg" id="one" 
+            alt="전세계 최고의 반려견 전용 수영장
+(서울특별시 광진구 광나루로 441)">
+        </p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">의성펫월드</h1>
+        <p class="content"><img src="media/펫월드.jpg" id="one" 
+            alt="다양한 즐길거리와 힐링이 있는 테마형 복합문화공간
+(경상북도 의성군 단북면 안계길 255-13)">
+        </p>
+    </div>
+
+    <hr  class="hidden" />
+    <address id="footer">
+		Copyright &copy; HJY <br />
+        <a href="https://www.instagram.com/bok10.20/"><i></i><div> 인스타그램 : bok10.20</div></a>
+	</address>
+</div>
+</body>
+</html>

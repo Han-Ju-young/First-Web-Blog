@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css"  href="./desktop.css" media="only screen and (min-width:401px)"  />
+<style>
+	.bigPictureWrapper {
+		position: absolute;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		top:0%;
+		width:100%;
+		height:100%;
+		background-color: gray; 
+		z-index: 100;
+		background:rgba(255,255,255,0.5);
+	}
+	.bigPicture {
+		position: relative;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.bigPicture img {
+		width:1000px;
+        height: 900px;
+	}
+    div.imgTopic {
+        display: inline-block;
+        position:relative;
+    } 
+    h1.title {
+        position:absolute;
+        z-index:1;
+        left:5px;
+        bottom:30px; 
+        font-size:18px;
+        font-weight:bold;
+        color:#fff;
+    }
+    span.date {
+        position:absolute; 
+        display:block; 
+        left:5px; 
+        bottom:0; 
+        width:250px; 
+        height:45px; 
+        padding:35px 0 0 5px; 
+        font-size:11px;
+        color:white; 
+    }
+    #imgs {
+        width: 945px;
+        height: 200px;
+        border-style: none;
+    }
+    img {
+        border-style: solid;
+        border-width : 10px;
+        border-color : skyblue;
+        width: 200px;
+        height: 200px;
+        opacity: 1;
+        position: relative;
+    }
+    img:hover {
+        opacity: 0.5;
+    }
+    h1 img{
+        border-style: none;
+        width: 100px;
+        height: 50px;
+        opacity: 1;
+    }
+    #one {
+        border-color : orange;
+    }
+    #two {
+        border-color: yellow;
+    }
+    #three {
+        border-color: green;
+    }
+    #four {
+        border-color: blue;
+    }
+    a > img {
+        border: none;
+        width: 35px;
+        height: 35px;
+    }
+</style>
+<script src='https://code.jquery.com/jquery-3.5.1.js'></script>
+<script>
+	$(document).ready(function (e){
+		
+		$(document).on("click","img",function(){
+			var path = $(this).attr('src')
+			showImage(path);
+		});
+		
+		function showImage(fileCallPath){
+		    $(".bigPictureWrapper").css("display","absolute").show();
+		    $(".bigPicture").html("<img src='"+fileCallPath+"' >").animate({
+                width:'500px', height: '100px', top: '50%', left: '30%'
+            });
+		}
+		  
+		$(".bigPictureWrapper").on("click", function(e){
+		    $(".bigPicture").animate({width:'0%', height: '0%'}, 1000);
+		    setTimeout(function(){
+		      $('.bigPictureWrapper').hide();
+		    }, 1000);
+		});
+	});
+</script>
+</head>
+<body>
+    <div id="top">
+        <div id="header">
+            <h1 id="logo"><img src="media/dog3.gif" width="100" height="50">
+                <img src="media/dog2.gif" width="100" height="50">
+                <img src="media/dog.gif" width="100" height="50">
+            </h1>
+    
+            <ul id="menu">
+                <li><a href="메뉴.html">HOME</a></li>
+                <li><a href="#" id="current">INTRODUCE</a>
+                    <ul id="sub-menu">
+                        <li><a href="사진첩.html">사진</a></li>
+                        <li><a href="영상집.html">영상</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">TIP'S</a>
+                    <ul id="sub-menu">
+                        <li><a href="사료&간식.html">사료 & 간식</a></li>
+                        <li><a href="주의할점.html">주의할 점</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CULTURE</a>
+                    <ul id="sub-menu">
+                        <li><a href="세계동물의날.html">세계 동물의 날</a></li>
+                        <li><a href="동물주제영화.html">동물 주제 영화</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FETURE</a>
+                    <ul id="sub-menu">
+                        <li><a href="함께하는미래.html">함께하는 미래</a></li>
+                        <li><a href="입양및등록.html">입양 및 등록</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <hr class="hidden" />
+        
+        <div id="contents">
+            <div id="campaign">
+                <img src="media/반려동물.png" width="945" height="200" id="imgs" />
+                <p class="caption"> Animal Lover's blog	</p>
+            </div>
+        </div>
+        <hr  class="hidden" />
+	<div class='bigPictureWrapper'>
+		<div class='bigPicture'>
+		</div>
+	</div>
+    
+    <div class="imgTopic">
+        <h1 class="title">아기 복덩이</h1>
+        <p class="content"><img src="media/bok17.jpg" id="one"><span class="date">2020년01월12일</span></p>
+    </div>
+    <div class="imgTopic" style="display: inline-block;">
+        <h1 class="title">산책 가고싶은 복덩이</h1>
+        <p class="content"><img src="media/bok1.jpg" id="two"><span class="date">2020년03월16일</span></p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">첫 산책</h1>
+        <p class="content"><img src="media/bok18.jpg" id="three"><span class="date">2020년03월20일</span></p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">놀이터 구경</h1>
+        <p class="content"><img src="media/bok2.jpg" id="four"><span class="date">2020년03월27일</span></p>
+    </div><br>
+
+    <div class="imgTopic">
+        <h1 class="title">운동장 산책</h1>
+        <p class="content"><img src="media/bok3.jpg" id="two"><span class="date">2020년04월15일</span></p>
+    </div>
+    <div class="imgTopic" style="display: inline-block;">
+        <h1 class="title">첫 등산</h1>
+        <p class="content"><img src="media/bok4.jpg" id="one"><span class="date">2020년04월16일</span></p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">더워서 기절</h1>
+        <p class="content"><img src="media/bok5.jpg" id="two"><span class="date">2020년05월26일</span></p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">공지천 나들이</h1>
+        <p class="content"><img src="media/bok8.jpg" id="three"><span class="date">2020년08월08일</span></p>
+    </div><br>
+
+    <div class="imgTopic">
+        <h1 class="title">공놀이 좋아</h1>
+        <p class="content"><img src="media/bok9.jpg" id="three"><span class="date">2020년09월17일</span></p>
+    </div>
+    <div class="imgTopic" style="display: inline-block;">
+        <h1 class="title">꼬질 복덩</h1>
+        <p class="content"><img src="media/bok10.jpg" id="two"><span class="date">2020년11월07일</span></p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">눈 잔뜩 먹은 복덩이</h1>
+        <p class="content"><img src="media/bok11.jpg" id="one"><span class="date">2021년01월19일</span></p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">복 레이서</h1>
+        <p class="content"><img src="media/bok12.jpg" id="two"><span class="date">2021년02월24일</span></p>
+    </div><br>
+
+    <div class="imgTopic">
+        <h1 class="title">소파 복덩</h1>
+        <p class="content"><img src="media/bok13.jpg" id="four"><span class="date">2021년09월01일</span></p>
+    </div>
+    <div class="imgTopic" style="display: inline-block;">
+        <h1 class="title">바깥 구경</h1>
+        <p class="content"><img src="media/bok6.jpg" id="three"><span class="date">2021년12월27일</span></p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">신호등 기다리는 중</h1>
+        <p class="content"><img src="media/bok14.jpg" id="two"><span class="date">2022년02월22일</span></p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">세젤귀 줌인</h1>
+        <p class="content"><img src="media/bok15.jpg" id="one"><span class="date">2022년04월24일</span></p>
+    </div><br>
+
+    <div class="imgTopic">
+        <h1 class="title">너무 높은 턱</h1>
+        <p class="content"><img src="media/bok16.jpg" id="one"><span class="date">2022년05월12일</span></p>
+    </div>
+    <div class="imgTopic" style="display: inline-block;">
+        <h1 class="title">산책 후유증</h1>
+        <p class="content"><img src="media/bok19.jpg" id="four"><span class="date">2022년05월12일</span></p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">꽃개</h1>
+        <p class="content"><img src="media/bok7.jpg" id="three"><span class="date">2022년05월15일</span></p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">여우인가 개인가</h1>
+        <p class="content"><img src="media/bok20.jpg" id="two"><span class="date">2022년05월21일</span></p>
+    </div><br>
+
+    <address id="footer">
+		Copyright &copy; HJY <br />
+        <a href="https://www.instagram.com/bok10.20/"><i></i><div> 인스타그램 : bok10.20</div></a>
+	</address>
+</div>
+</body>
+</html>

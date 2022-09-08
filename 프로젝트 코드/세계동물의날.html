@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css"  href="./desktop.css" media="only screen and (min-width:401px)"  />
+<style>
+div.imgTopic {
+    display: inline-block;
+    position:relative;
+} 
+h1.title {
+    position:absolute;
+    z-index:1;
+    left:5px;
+    bottom:30px; 
+    font-size:18px;
+    font-weight:bold;
+    color:#fff;
+}
+span.date {
+    position:absolute; 
+    display:block; 
+    left:5px; 
+    bottom:0; 
+    width:250px; 
+    height:45px; 
+    padding:35px 0 0 5px; 
+    font-size:11px;
+    color:white; 
+}
+#one {
+    width: 230px;
+    height: 230px;
+    opacity: 0.5;
+}
+#one:hover {
+    opacity: 1;
+}
+</style>
+<script src='https://code.jquery.com/jquery-3.5.1.js'></script>
+<script>
+$(document).ready(function() {
+    $("img").click(function() {
+        alert($(this).attr("alt"));
+    });
+});
+</script>
+</head>
+<body>
+<div id="top">
+    <div id="header">
+        <h1 id="logo"><img src="media/dog3.gif" width="100" height="50">
+            <img src="media/dog2.gif" width="100" height="50">
+            <img src="media/dog.gif" width="100" height="50">
+        </h1>
+    
+        <ul id="menu">
+			<li><a href="메뉴.html">HOME</a></li>
+			<li><a href="#">INTRODUCE</a>
+                <ul id="sub-menu">
+                    <li><a href="사진첩.html">사진</a></li>
+                    <li><a href="영상집.html">영상</a></li>
+                </ul>
+            </li>
+			<li><a href="#">TIP'S</a>
+                <ul id="sub-menu">
+                    <li><a href="사료&간식.html">사료 & 간식</a></li>
+                    <li><a href="주의할점.html">주의할 점</a></li>
+                </ul>
+            </li>
+            <li><a href="#" id="current">CULTURE</a>
+                <ul id="sub-menu">
+                    <li><a href="세계동물의날.html">세계 동물의 날</a></li>
+                    <li><a href="동물주제영화.html">동물 주제 영화</a></li>
+                </ul>
+            </li>
+			<li><a href="#">FETURE</a>
+                <ul id="sub-menu">
+                    <li><a href="함께하는미래.html">함께하는 미래</a></li>
+                    <li><a href="입양및등록.html">입양 및 등록</a></li>
+                </ul>
+            </li>
+		</ul>
+    </div>
+    <hr class="hidden" />
+    <div id="contents">
+		<div id="campaign">
+			<img src="media/반려동물.png"  width="945" height="200" alt=""  />
+			<p class="caption"> Animal Lover's blog	</p>
+		</div>
+	</div>
+    <hr  class="hidden" />
+    
+    <div class="imgTopic">
+        <h1 class="title">세계 야생동물의 날</h1>
+        <p class="content"><img src="media/야생동물.jpg" id="one" alt="전 세계적으로 멸종 위기종에 대한 관심과 대책을 추구하는 날">
+            <span class="date">3월 3일</span>
+        </p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">국제 강아지의 날</h1>
+        <p class="content"><img src="media/강아지.jpg" id="one" alt="버려지는 유기견을 보호하고 입양을 권장하는 날">
+            <span class="date">3월 23일</span>
+        </p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">세계 실험동물의 날</h1>
+        <p class="content"><img src="media/실험동물.jpg" id="one" alt="우리가 사용하는 제품들이 실제로 동물의 희생을 기반으로 생산된다는 사실을 알리는 날">
+            <span class="date">4월 24일</span>
+        </p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">세계 고양이의 날</h1>
+        <p class="content"><img src="media/고양이.jpg" id="one" alt="인간과 고양이 사이의 오랜 유대를 기념하는 날">
+            <span class="date">8월 8일</span>
+        </p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">국제 떠돌이동물의 날</h1>
+        <p class="content"><img src="media/떠돌이.jpg" id="one" alt="인간으로부터 버림받아 길 생활을 시작한 모든 동물을 기리는 날">
+            <span class="date">8월 19일</span>
+        </p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">한국 고양이의 날</h1>
+        <p class="content"><img src="media/한국고양이.jpg" id="one" alt="1년에 단 하루 만이라도 고양이의 생명을 생각하기를 바라는 날">
+            <span class="date">9월 9일</span>
+        </p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">세계 농장동물의 날</h1>
+        <p class="content"><img src="media/농장동물.jpg" id="one" alt="농장동물의 고통을 잊지 말고, 생명으로써 존중하도록 노력하는 날">
+            <span class="date">10월 2일</span>
+        </p>
+    </div>
+    <div class="imgTopic">
+        <h1 class="title">세계 동물의 날</h1>
+        <p class="content"><img src="media/세계동물.jpg" id="one" alt="멸종 위기종 보호와 동물과 인간의 유대를 생각하는 날">
+            <span class="date">10월 4일</span>
+        </p>
+    </div>
+    <hr>
+
+    <address id="footer">
+		Copyright &copy; HJY <br />
+        <a href="https://www.instagram.com/bok10.20/"><i></i><div> 인스타그램 : bok10.20</div></a>
+	</address>
+</div>
+</body>
+</html>

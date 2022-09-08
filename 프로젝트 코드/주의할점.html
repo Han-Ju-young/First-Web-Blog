@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css"  href="./desktop.css" media="only screen and (min-width:401px)"  />
+<style>
+#con {
+        width: 230px;
+        height: 230px;
+}
+#eat {
+    display: inline-block;
+}
+td img {
+    width: 125px;
+    height: 125px;
+}
+#good {
+    font-size: 17px;
+    color: black;
+    background: rgb(211, 238, 158);
+}
+#bad {
+    font-size: 17px;
+    color: black;
+    background: rgb(238, 158, 158);
+}
+td {
+    color: black;
+    text-align: center;
+}
+#bad, #good {
+    color: black;
+    text-align: center;
+}
+th {
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
+<div id="top">
+    <div id="header">
+        <h1 id="logo"><img src="media/dog3.gif" width="100" height="50">
+            <img src="media/dog2.gif" width="100" height="50">
+            <img src="media/dog.gif" width="100" height="50">
+        </h1>
+    
+        <ul id="menu">
+			<li><a href="메뉴.html">HOME</a></li>
+			<li><a href="#">INTRODUCE</a>
+                <ul id="sub-menu">
+                    <li><a href="사진첩.html">사진</a></li>
+                    <li><a href="영상집.html">영상</a></li>
+                </ul>
+            </li>
+			<li><a href="#" id="current">TIP'S</a>
+                <ul id="sub-menu">
+                    <li><a href="사료&간식.html">사료 & 간식</a></li>
+                    <li><a href="주의할점.html">주의할 점</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CULTURE</a>
+                <ul id="sub-menu">
+                    <li><a href="세계동물의날.html">세계 동물의 날</a></li>
+                    <li><a href="동물주제영화.html">동물 주제 영화</a></li>
+                </ul>
+            </li>
+			<li><a href="#">FETURE</a>
+                <ul id="sub-menu">
+                    <li><a href="함께하는미래.html">함께하는 미래</a></li>
+                    <li><a href="입양및등록.html">입양 및 등록</a></li>
+                </ul>
+            </li>
+		</ul>
+    </div>
+    <hr class="hidden" />
+    <div id="contents">
+		<div id="campaign">
+			<img src="media/반려동물.png"  width="945" height="200" alt=""  />
+			<p class="caption"> Animal Lover's blog	</p>
+		</div>
+	</div>
+    <hr  class="hidden" />
+
+    <h1>주의해야 할 음식</h1>
+    <table border="1">
+        <tr>
+            <th></th>
+            <th>과일류</th>
+            <th>채소 및 식자재</th>
+        </tr>
+        <tr id="bad">
+            <td><img src="media/위험음식.PNG"></td>
+            <td><img src="media/식품들/포도.jpg">
+                <img src="media/식품들/자몽.jpg"><br>
+                석류, 무화과, 자두 등
+            </td>
+            <td><img src="media/식품들/양파.jpg">
+                <img src="media/식품들/마늘.jpg">
+                <img src="media/식품들/견과류.jpg"><br>
+                파, 고추, 부추, 버섯, 날달걀 흰자 등
+            </td>
+        </tr>
+        <tr id="good">
+            <td><img src="media/가능음식.jpg"></td>
+            <td>
+                <img src="media/식품들/사과.jpg">
+                <img src="media/식품들/바나나.jpg">
+                <img src="media/식품들/딸기.jpg"><br>
+                배, 멜론, 블루베리, 수박 등
+            </td>
+            <td><img src="media/식품들/당근.jpg">
+                <img src="media/식품들/브로콜리.jpg">
+                <img src="media/식품들/두부.jpg"><br>
+                양배추, 상추, 감자, 오이, 토마토 등
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <table border="1">
+        <tr>
+            <th></th>
+            <th>해산물</th>
+            <th>기타</th>
+        </tr>
+        <tr id="bad">
+            <td><img src="media/위험음식.PNG"></td>
+            <td><img src="media/식품들/오징어.jpg">
+                <img src="media/식품들/갑각류.jpg">
+                <img src="media/식품들/김.jpg"><br>
+                쥐포류, 날생선, 전복, 소라, 조개류 등
+            </td>
+            <td><img src="media/식품들/초콜릿.jpg">
+                <img src="media/식품들/우유.jpg">
+                <img src="media/식품들/녹차.jpg"><br>
+                과자, 빵, 고염분음식, 닭뼈, 고양이음식 등
+            </td>
+        </tr>
+    </table>
+    <br><hr>
+
+    <h1>강아지 구토 색 진단법</h1>
+    강아지를 기르다보면 종종 구토를 하는 경우가 있습니다.<br>
+    구토의 색이나 형태에 따라 강아지의 건강상태를 간단하게 판단할 수 있습니다
+    <table border="1">
+        <tr>
+            <th colspan="6">큰 문제가 없는 구토의 색깔</th>
+        </tr>
+        <tr id="good">
+            <td><img src="media/무색.PNG"></td>
+            <td>위액<br>침의 역류</td>
+            <td>공복,<br>먹이를 주지 않은 경우</td>
+
+            <td><img src="media/음식.PNG"></td>
+            <td>먹은 음식을 구토</td>
+            <td>급하게 먹었거나<br>과식, 소화불량</td>
+        </tr>
+        <tr id="good">
+            <td><img src="media/노랑.PNG"></td>
+            <td>노란색 구토</td>
+            <td>공복이 길어진 경우</td>
+
+            <td><img src="media/핑크.PNG"></td>
+            <td>핑크색 구토</td>
+            <td>입안, 식도, 위장 부분의 상처</td>
+        </tr>
+
+        <tr>
+            <th colspan="6">심각한 경우 (당장 병원으로)</th>
+        </tr>
+        <tr id="bad">
+            <td><img src="media/갈색.PNG"></td>
+            <td>짙은 갈색 구토</td>
+            <td>소장, 대장에 출혈이 있는 경우</td>
+
+            <td><img src="media/녹색.PNG"></td>
+            <td>녹색 구토</td>
+            <td>이물질을 먹었거나<br>췌장에 문제가 생긴 경우</td>
+        </tr>
+        <tr id="bad">
+            <td><img src="media/이물질.PNG"></td>
+            <td>이물질 동반 구토</td>
+            <td>장, 식도에 상처가 생김</td>
+
+            <td><img src="media/빨강.PNG"></td>
+            <td>빨간색 구토</td>
+            <td>입안, 식도, 위장에 상처로<br>출혈이 많은 경우</td>
+        </tr>
+    </table>
+    
+    <address id="footer">
+		Copyright &copy; HJY <br />
+        <a href="https://www.instagram.com/bok10.20/"><i></i><div> 인스타그램 : bok10.20</div></a>
+	</address>
+</div>
+</body>
+</html>
